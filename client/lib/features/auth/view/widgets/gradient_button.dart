@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:music_app/core/theme/app_palette.dart';
 
 class GradientButton extends StatelessWidget {
@@ -26,17 +27,17 @@ class GradientButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
-          fixedSize: const Size(
-            395,
-            55,
+          fixedSize: Size(
+            395.w,
+            55.h,
           ),
           backgroundColor: Palette.transparentColor,
           shadowColor: Palette.transparentColor,
         ),
         child: Text(
           buttonText,
-          style: const TextStyle(
-            fontSize: 17,
+          style: TextStyle(
+            fontSize: 17.sp,
             fontWeight: FontWeight.w600,
           ),
         ),
