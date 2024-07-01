@@ -85,7 +85,6 @@ class AuthViewModel extends _$AuthViewModel {
   }
 
   Future<UserModel?> getData() async {
-    // await initSharedPreferences();
     state = const AsyncValue.loading();
     final token = _authLocalRepository.getToken();
     if (token != null) {
