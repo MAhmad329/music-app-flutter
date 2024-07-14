@@ -69,6 +69,7 @@ class _SignupPageState extends ConsumerState<SignupPage> {
       appBar: AppBar(
         toolbarHeight: 0,
         automaticallyImplyLeading: false,
+
         backgroundColor: Palette.backgroundColor,
       ),
       body: isLoading

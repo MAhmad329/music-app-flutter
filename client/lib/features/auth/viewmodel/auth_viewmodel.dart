@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:fpdart/fpdart.dart';
 import 'package:music_app/core/providers/current_user_notifier.dart';
-import 'package:music_app/features/auth/model/user_model.dart';
 import 'package:music_app/features/auth/repositories/auth_local_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+import '../../../core/model/user_model.dart';
 import '../repositories/auth_remote_repository.dart';
 
 part 'auth_viewmodel.g.dart';

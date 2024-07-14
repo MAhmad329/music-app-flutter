@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class SongModel {
 // ignore_for_file: non_constant_identifier_names
   final String id;
@@ -81,4 +83,9 @@ class SongModel {
       hex_code: map['hex_code'] ?? '',
     );
   }
+
+  String toJson() => json.encode(toMap());
+
+  factory SongModel.fromJson(String source) =>
+      SongModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }

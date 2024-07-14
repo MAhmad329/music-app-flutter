@@ -4,8 +4,9 @@ import 'package:fpdart/fpdart.dart';
 import 'package:http/http.dart' as http;
 import 'package:music_app/core/constants/server_constants.dart';
 import 'package:music_app/core/failure/failure.dart';
-import 'package:music_app/features/auth/model/user_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+import '../../../core/model/user_model.dart';
 
 part 'auth_remote_repository.g.dart';
 
